@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/colors.dart';
+import 'package:project_1/components/post_item.dart';
+import 'package:project_1/styles_text.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+
+  List<String> users = [];
 
   @override
   Widget build(BuildContext context) {
+    mockUsersFromServer();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: ColorConstants.background,
@@ -15,31 +20,25 @@ class HomePage extends StatelessWidget {
           Icon(Icons.logout),
         ],
       ),
-      body: SingleChildScrollView(
-        child: ListView(
-          children: mockUsersFromServer(),
-        ),
+      body: ListView.separated(
+          itemBuilder: (context, index) {
+            return PostItem(
+              user: users[index],
+            );
+          },
+          separatorBuilder: (BuildContext context,int index){
+             return SizedBox(height: 24,);
+          },
+          itemCount: users.length,
       )  ,
     );
   }
-  Widget _userItems() {
-    return Row(
-      children: [Image.network('https://e0.pxfuel.com/wallpapers/673/688/desktop-wallpaper-allu-arjun-pushpa-allu-arjun-jiteshpatre-jitesh-patre-jitesh-alluarjun-pushpa-aa20-sukumar-allu-arjun-allu-arjun-hairstyle-allu-arjun-thumbnail.jpg',
-        width:60,height:60,
-      ),
-        SizedBox(width: 12,),
-        Text('Allu Arjun')
-      ],
-    );
-  }
 
-  List<Widget> mockUsersFromServer(){
-    List<Widget> users = [];
-      for(var i=0;i<200;i++){
-        users.add(_userItems());
+
+   mockUsersFromServer(){
+      for(var i=0;i<400;i++){
+        users.add('user number $i');
       }
-    return users;
-
   }
 
 

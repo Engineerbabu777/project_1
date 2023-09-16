@@ -1,0 +1,29 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="iPhone 14 Pro - 7" clip-path="url(#clip0_0_1)">
+<rect width="393" height="852" transform="translate(-263 -781)" fill="#1A2947"/>
+<g id="Menu">
+<g id="Bg" filter="url(#filter0_d_0_1)">
+<rect x="-239" y="-23" width="345" height="70" rx="25" fill="white"/>
+</g>
+<g id="Group 8" opacity="0.3">
+<path id="Icon feather-message-circle" d="M21.435 11.4764C21.4397 12.8622 21.1164 14.2295 20.4915 15.4664C19.7518 16.9461 18.6148 18.1907 17.2078 19.0607C15.8008 19.9307 14.1793 20.3918 12.525 20.3924C11.1418 20.3959 9.77722 20.0726 8.54253 19.4489L2.56653 21.4349L4.55853 15.4664C3.93421 14.2294 3.61142 12.8621 3.61653 11.4764C3.61698 9.82231 4.07788 8.20097 4.94763 6.79396C5.81737 5.38696 7.06161 4.24984 8.54103 3.50994C9.77617 2.88602 11.1412 2.56274 12.525 2.56644H13.0485C15.2336 2.68684 17.2975 3.60906 18.845 5.1565C20.3924 6.70395 21.3146 8.76784 21.435 10.9529V11.4764Z" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-279" y="-53" width="425" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="20"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="393" height="852" fill="white" transform="translate(-263 -781)"/>
+</clipPath>
+</defs>
+</svg>
