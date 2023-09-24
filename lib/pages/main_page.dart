@@ -28,19 +28,19 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavigationBarItem(
               icon:  SvgPicture.asset('assets/heart.svg'),
-              label: 'Home'
+              label: 'Favrioute'
           ),
           BottomNavigationBarItem(
               icon:  SvgPicture.asset('assets/group8.svg'),
               label: 'Add post'
           ),
           BottomNavigationBarItem(
-              icon:  SvgPicture.asset('assets/group8.svg'),
-              label: 'Home'
+              icon:  SvgPicture.asset('assets/message.svg'),
+              label: 'Messages'
           ),
           BottomNavigationBarItem(
               icon:  SvgPicture.asset('assets/icon.svg'),
-              label: 'Home'
+              label: 'User'
           ),
 
         ],

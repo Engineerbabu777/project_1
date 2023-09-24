@@ -10,6 +10,7 @@ class TextDesign{
   static const header2 = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.w600,
+    color: Colors.white,
   );
 
   static const subtitle1 = TextStyle(
