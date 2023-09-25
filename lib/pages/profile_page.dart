@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project_1/components/toolbar.dart';
+import 'package:project_1/components/user_avatar.dart';
 import 'package:project_1/styles_text.dart';
 
 enum ProfileMenu { edit, logout }
@@ -30,10 +31,9 @@ class ProfilePage extends StatelessWidget {
             onSelected: (value) {
               switch (value) {
                 case ProfileMenu.edit:
-                  print('object 1');
+                  Navigator.pushNamed(context, '/editprofile');
                   break;
                 case ProfileMenu.logout:
-                  print('object 2');
 
                   break;
               }
@@ -45,14 +45,7 @@ class ProfilePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(20)),
-            child: Image.asset(
-              'assets/user.jpg',
-              width: 90,
-              height: 90,
-            ),
-          ),
+         UserAvatar(width:90,height:90),
           SizedBox(
             height: 24,
           ),

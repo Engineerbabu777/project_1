@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/components/app_textfield.dart';
 import 'package:project_1/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -39,15 +40,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height:16),
-                  const TextField(
-                    decoration: InputDecoration(hintText: 'Password',
-                      border:  OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
-                      fillColor: Colors.white54,
-                      filled: true,
-                    ),
-                  ),
+                  AppTextField(placeholder: 'Password'),
                   Align(
                     alignment: Alignment.bottomRight,
                     child: TextButton(onPressed: () {}, child: const Text('Forgot Password'

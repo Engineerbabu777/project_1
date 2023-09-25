@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
               label: 'Favrioute'
           ),
           BottomNavigationBarItem(
-              icon:  SvgPicture.asset('assets/group8.svg'),
+              icon:  SvgPicture.asset('assets/add.svg'),
               label: 'Add post'
           ),
           BottomNavigationBarItem(
