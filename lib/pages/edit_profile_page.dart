@@ -80,80 +80,86 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 height: 12,
               ),
               AppTextField(placeholder: 'Birthday'),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white54,
-                  borderRadius: BorderRadius.all(Radius.circular(16))
-                ),
-                child:Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Gender'),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: RadioListTile(
-                          contentPadding: EdgeInsets.all(0),
-visualDensity: VisualDensity(
-  horizontal: VisualDensity.minimumDensity,
-  vertical: VisualDensity.minimumDensity,
-),
-                          value: Gender.male,
-                          groupValue: gender,
-                          onChanged: (value) {
-                            setState(() {
-                              gender = Gender.male;
-                            });
-                          },
-                          title: Text(
-                            'Male',
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: RadioListTile(
-                          contentPadding: EdgeInsets.all(0),
-                          visualDensity: VisualDensity(
-                            horizontal: VisualDensity.minimumDensity,
-                            vertical: VisualDensity.minimumDensity,
-                          ),
-                          value: Gender.female,
-                          groupValue: gender,
-                          onChanged: (value) {
-                            setState(() {
-                              gender = Gender.female;
-                            });
-                          },
-                          title: Text(
-                            'Female',
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: RadioListTile(
-                          contentPadding: EdgeInsets.all(0),
-                          visualDensity: VisualDensity(
-                            horizontal: VisualDensity.minimumDensity,
-                            vertical: VisualDensity.minimumDensity,
-                          ),
-                          value: Gender.other,
-                          groupValue: gender,
-                          onChanged: (value) {
-                            setState(() {
-                              gender = Gender.other;
-                            });
-                          },
-                          title: Text(
-                            'other',
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ],
-                )
-
+              SizedBox(
+                height: 16,
               ),
+              Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white54,
+                    borderRadius: BorderRadius.all(Radius.circular(16)),
+                  ),
+                  padding: EdgeInsets.only(left: 12, right: 12, top: 6),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+
+                    children: [
+                      Text('Gender',style: TextDesign.body1.copyWith(fontSize: 12,color: Colors.white),),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: RadioListTile(
+                              contentPadding: EdgeInsets.all(0),
+                              visualDensity: VisualDensity(
+                                horizontal: VisualDensity.minimumDensity,
+                                vertical: VisualDensity.minimumDensity,
+                              ),
+                              value: Gender.male,
+                              groupValue: gender,
+                              onChanged: (value) {
+                                setState(() {
+                                  gender = Gender.male;
+                                });
+                              },
+                              title: Text(
+                                'Male',
+                                style: TextStyle(color:Colors.white),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: RadioListTile(
+                              contentPadding: EdgeInsets.all(0),
+                              visualDensity: VisualDensity(
+                                horizontal: VisualDensity.minimumDensity,
+                                vertical: VisualDensity.minimumDensity,
+                              ),
+                              value: Gender.female,
+                              groupValue: gender,
+                              onChanged: (value) {
+                                setState(() {
+                                  gender = Gender.female;
+                                });
+                              },
+                              title: Text(
+                                'Female',
+                                style: TextStyle(color:Colors.white),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: RadioListTile(
+                              contentPadding: EdgeInsets.all(0),
+                              visualDensity: VisualDensity(
+                                horizontal: VisualDensity.minimumDensity,
+                                vertical: VisualDensity.minimumDensity,
+                              ),
+                              value: Gender.other,
+                              groupValue: gender,
+                              onChanged: (value) {
+                                setState(() {
+                                  gender = Gender.other;
+                                });
+                              },
+                              title: Text(
+                                'other',
+                                style: TextStyle(color:Colors.white),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),

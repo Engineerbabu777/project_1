@@ -30,15 +30,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   ),
                   const SizedBox(height:60),
-                   const TextField(
-                    decoration: InputDecoration(hintText: 'Username',
-                        border:  OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                        ),
-                        filled: true,
-                        fillColor: Colors.white54,
-                    ),
-                  ),
+                  AppTextField(placeholder: 'Username'),
                   const SizedBox(height:16),
                   AppTextField(placeholder: 'Password'),
                   Align(

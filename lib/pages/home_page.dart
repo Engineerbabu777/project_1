@@ -17,8 +17,9 @@ class HomePage extends StatelessWidget {
       appBar: Toolbar(
         title: 'Home Page',
         action: [
-          IconButton(onPressed: (){ }, icon: Icon(Icons.location_on_outlined),),
-
+          IconButton(
+            onPressed: (){ Navigator.of(context).pushNamed('/map'); },
+            icon: Icon(Icons.location_on_outlined),),
         ],
       ),
       body: ListView.separated(
