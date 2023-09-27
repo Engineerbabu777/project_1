@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/components/app_textfield.dart';
 import 'package:project_1/pages/home_page.dart';
+import 'package:http/http.dart' as http;
+
+const baseUrl = 'http://localhost:3000';
+
 
 class LoginPage extends StatelessWidget {
+  final loginRoute = '$baseUrl/login';
   const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    doLogin();
     return Scaffold(
       body: SingleChildScrollView(
         child: SizedBox(
@@ -117,5 +123,16 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future<String> doLogin() async{
+    final response = await http.post(Uri.parse(loginRoute));
+    if(response.statusCode == 200){
+      consol.log()
+      return response.body;
+    }else{
+      print('You have an error:');
+      return throw Exception('Error');
+    }
   }
 }
